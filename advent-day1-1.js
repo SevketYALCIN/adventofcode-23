@@ -1004,7 +1004,7 @@ const inputArr = input.match(/[^\r\n]+/g)
 let result = 0
 
 for(let i = 0; i < inputArr.length; i++) {
-	const numbersInLine = inputArr[i].replace(/\D/g,'')
+  const numbersInLine = inputArr[i].replace(/\D/g,'')
   let res = numbersInLine[0] + numbersInLine[numbersInLine.length - 1]
   result += parseInt(res, 10)
 }
